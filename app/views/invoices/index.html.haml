@@ -1,0 +1,105 @@
+!!! Strict
+%html{xmlns: "http://www.w3.org/1999/xhtml", "xml:lang": "en"}
+    %head 
+        %meta{"http-equiv": "Content-Type", content:"text/html;charset=UTF-8"}
+        %title Document
+    %body
+        %div{class: "container"}
+            %div{class: "row"}
+                %div{class: "col-12"}
+                    %div{class: "invoice-title"}
+                        %h2 Invoice  
+                        %h3{class: "float-end"} Order # 12345
+                    %hr
+                    %div{class: "row"}
+                        %div{class: "col-6"}
+                            %address
+                                %strong Billed To:
+                                %br
+                                John Smith
+                                %br
+                                1234 Main
+                                %br
+                                Apt. 4B
+                                %br
+                                Springfield, ST 54321
+                        %div{class: "col-6 text-end"}
+                            %address
+                                %strong Shipped To:
+                                %br 
+                                Jane Smith
+                                %br
+                                1234 Main
+                                %br
+                                Apt. 4B
+                                %br
+                                Springfield, ST 54321
+                    %div{class: "row"}
+                        %div{class: "col-6"}
+                            %address
+                                %strong Payment Method:
+                                %br 
+                                Visa ending **** 4242
+                                %br
+                                jsmith@email.com
+                        %div{class: "col-6 text-end"}
+                            %address
+                                %strong Order Date: 
+                                %br
+                                March 7, 2014
+                                %br
+                                %br
+
+            %div{class: "row"}
+                %div{class: "col-md-12"}
+                    %div{class: "card"}
+                        %div{class: "card-header"}
+                            %h3
+                                %strong Order summary 
+                        %div{class: "card-body"}
+                            %div{class: "table-responsive"}
+                                %table{class: "table table-condensed"}
+                                    %thead 
+                                        %tr 
+                                            %td
+                                                %strong Item 
+                                            %td{class: "text-center"}
+                                                %strong Price
+                                            %td{class: "text-center"}
+                                                %strong Quantity 
+                                            %td{class: "text-end"}
+                                                %strong Totals 
+                                    %tbody
+                                        %tr 
+                                            %td BS-200
+                                            %td{class: "text-center"} $10.99
+                                            %td{class: "text-center"} 1
+                                            %td{class: "text-end"} $10.99
+                                        %tr
+                                            %td BS-400 
+                                            %td{class: "text-center"} $20.00
+                                            %td{class: "text-center"} 3
+                                            %td{class: "text-end"} $60.00
+                                        %tr 
+                                            %td BS-1000 
+                                            %td{class: "text-center"} $600.00
+                                            %td{class: "text-center"} 1 
+                                            %td{class: "text-end"} $600.00
+                                        %tr 
+                                            %td{class: "thick-line"}
+                                            %td{class: "thick-line"}
+                                            %td{class: "thick-line text-center"}
+                                                %strong Subtotal 
+                                            %td{class: "thick-line text-end"} $670.99
+                                        %tr 
+                                            %td{class: "no-line"}
+                                            %td{class: "no-line"}
+                                            %td{class: "no-line text-center"} 
+                                                %strong Shipping 
+                                            %td{class: "no-line text-end"} $15
+                                        %tr 
+                                            %td{class: "no-line"}
+                                            %td{class: "no-line"}
+                                            %td{class: "no-line text-center"}    
+                                                %strong Total 
+                                            %td{class: "no-line text-end"} $685.99
